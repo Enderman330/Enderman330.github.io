@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiant Groups | Engineered to Shine</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" onclick="navigateTo('home'); return false;">
+                Radiant <span class="text-mclaren">Groups</span>
+            </a>
+            <div class="nav-links">
+                <a href="#work" onclick="navigateTo('home')">Work</a>
+                <a href="#about" onclick="navigateTo('home')">About</a>
+                <a href="#reviews" onclick="navigateTo('home')">Reviews</a>
+                <a href="#links-section" onclick="navigateTo('home')">Links</a>
+            </div>
+            <a href="#contact" class="btn-liquid" onclick="navigateTo('home'); setTimeout(() => scrollToSection('contact'), 100);">
+                <span>Connect</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content Wrapper -->
+    <main id="main-content">
+        
+        <!-- VIEW: HOME -->
+        <section id="home-view" class="view active">
+            
+            <!-- Hero Section -->
+            <header class="hero-section">
+                <div class="hero-bg-gradient"></div>
+                <div class="container hero-content">
+                    <div class="hero-badge glass-panel">
+                        <span class="status-dot"></span> Available to Hire
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Engineered</span> <br>
+                        to <span class="text-mclaren">Shine</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Roblox builder and visual designer crafting immersive environments and eye-catching thumbnails that stand out and perform.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#work" class="btn-liquid btn-primary" onclick="scrollToSection('work')">
+                            View Projects
+                        </a>
+                        <a href="#contact" class="btn-ghost" onclick="scrollToSection('contact')">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Selected Work Section -->
+            <section id="work" class="work-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Current <span class="text-mclaren">Projects</span></h2>
+                        <p class="section-desc">High-fidelity environments and assets currently in development.</p>
+                    </div>
+
+                    <div class="projects-grid">
+                        <!-- Project Card 1 -->
+                        <div class="project-card wip-card" data-project-id="1">
+                            <div class="card-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1600" alt="Abstract Structure" class="card-image">
+                                <div class="card-overlay">
+                                    <span class="btn-view-project">Coming Soon</span>
+                                </div>
+                                <div class="wip-badge">In Progress</div>
+                            </div>
+                            <div class="card-info">
+                                <h3>Project Alpha</h3>
+                                <p>Immersive Environment / Lighting</p>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2 -->
+                        <div class="project-card wip-card" data-project-id="2">
+                            <div class="card-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?auto=format&fit=crop&q=80&w=1600" alt="Neon Flow" class="card-image">
+                                <div class="card-overlay">
+                                    <span class="btn-view-project">Coming Soon</span>
+                                </div>
+                                <div class="wip-badge">In Progress</div>
+                            </div>
+                            <div class="card-info">
+                                <h3>Neon Horizon</h3>
+                                <p>Visual Design / UI System</p>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3 -->
+                        <div class="project-card wip-card" data-project-id="3">
+                            <div class="card-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1634152962476-4b8a00e1915c?auto=format&fit=crop&q=80&w=1600" alt="Geometric Shape" class="card-image">
+                                <div class="card-overlay">
+                                    <span class="btn-view-project">Coming Soon</span>
+                                </div>
+                                <div class="wip-badge">In Progress</div>
+                            </div>
+                            <div class="card-info">
+                                <h3>Void Structure</h3>
+                                <p>Architectural Build / Modeling</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About / Stats Section -->
+            <section id="about" class="about-section">
+                <div class="container split-layout">
+                    <div class="about-text">
+                        <h2 class="section-title">Beyond the <span class="text-electric">Build</span></h2>
+                        <p class="lead-text">
+                            I don't just place parts; I craft experiences. Specializing in atmospheric builds and high-conversion thumbnails, I help games stand out in a crowded marketplace.
+                        </p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <h3 class="stat-number">10+</h3>
+                                <p class="stat-label">Projects Shipped</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number">1M+</h3>
+                                <p class="stat-label">Total Visits</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number">100%</h3>
+                                <p class="stat-label">Satisfaction Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="visual-card glass-panel">
+                            <div class="code-block">
+                                <span class="code-keyword">local</span> <span class="code-func">Radiant</span> = <span class="code-var">Groups</span>.new()<br>
+                                <span class="code-keyword">local</span> <span class="code-var">Quality</span> = <span class="code-string">"Premium"</span><br>
+                                <br>
+                                <span class="code-comment">-- Crafting immersive worlds</span><br>
+                                <span class="code-keyword">function</span> <span class="code-func">Radiant:Build</span>()<br>
+                                &nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-string">"Shine"</span><br>
+                                <span class="code-keyword">end</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reviews Section -->
+            <section id="reviews" class="reviews-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Client <span class="text-mclaren">Feedback</span></h2>
+                        <p class="section-desc">Trusted by developers and studios.</p>
+                    </div>
+                </div>
+                
+                <div class="reviews-marquee-wrapper">
+                    <div class="reviews-track">
+                        <!-- Review Set 1 -->
+                        <div class="review-card glass-panel">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Delivered exactly what I needed. Clean build, smooth workflow, and great attention to detail."</p>
+                            <div class="reviewer">
+                                <div class="reviewer-info">
+                                    <span class="reviewer-name">savage_s0ul</span>
+                                    <span class="reviewer-sub">Individual Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card glass-panel">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Professional, skilled, and understands game design theory. Will hire again."</p>
+                            <div class="reviewer">
+                                <div class="reviewer-info">
+                                    <span class="reviewer-name">lilboialvin</span>
+                                    <span class="reviewer-sub">ALPHA CHAD GAMES</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card glass-panel">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Great communication and fast delivery. The logo design was simple, clean, and exactly what I wanted."</p>
+                            <div class="reviewer">
+                                <div class="reviewer-info">
+                                    <span class="reviewer-name">kingchoppa11</span>
+                                    <span class="reviewer-sub">Freelancer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card glass-panel">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Reliable and easy to work with."</p>
+                            <div class="reviewer">
+                                <div class="reviewer-info">
+                                    <span class="reviewer-name">codermind.</span>
+                                    <span class="reviewer-sub">Individual Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Review Set 2 (Duplicate) -->
+                         <div class="review-card glass-panel">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Delivered exactly what I needed. Clean build, smooth workflow, and great attention to detail."</p>
+                            <div class="reviewer">
+                                <div class="reviewer-info">
+                                    <span class="reviewer-name">savage_s0ul</span>
+                                    <span class="reviewer-sub">Individual Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card glass-panel">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Professional, skilled, and understands game design theory. Will hire again."</p>
+                            <div class="reviewer">
+                                <div class="reviewer-info">
+                                    <span class="reviewer-name">lilboialvin</span>
+                                    <span class="reviewer-sub">ALPHA CHAD GAMES</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card glass-panel">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Great communication and fast delivery. The logo design was simple, clean, and exactly what I wanted."</p>
+                            <div class="reviewer">
+                                <div class="reviewer-info">
+                                    <span class="reviewer-name">kingchoppa11</span>
+                                    <span class="reviewer-sub">Freelancer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card glass-panel">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Reliable and easy to work with."</p>
+                            <div class="reviewer">
+                                <div class="reviewer-info">
+                                    <span class="reviewer-name">codermind.</span>
+                                    <span class="reviewer-sub">Individual Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Links Section (Fixed - No Scroll Animation) -->
+            <section id="links-section" class="links-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Connect <span class="text-electric">With Me</span></h2>
+                        <p class="section-desc">Join the community and view my work.</p>
+                    </div>
+
+                    <div class="links-grid">
+                        <!-- Roblox Group -->
+                        <a href="https://www.roblox.com/communities/35074236/Radiant-Groups#!/about" target="_blank" class="link-card glass-panel">
+                            <div class="link-icon roblox-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.63605 2.81836L19.8782 7.06053L17.0498 16.5364L2.80761 12.2942L5.63605 2.81836ZM7.36426 8.63636L16.6362 11.3636L15.2725 15.9091L6.00053 13.1818L7.36426 8.63636Z"/>
+                                </svg>
+                            </div>
+                            <h3>Roblox Group</h3>
+                            <p>Join the Community</p>
+                            <span class="link-arrow">→</span>
+                        </a>
+
+                        <!-- YouTube -->
+                        <a href="https://www.youtube.com/@enderman_330" target="_blank" class="link-card glass-panel">
+                            <div class="link-icon youtube-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </div>
+                            <h3>YouTube</h3>
+                            <p>Showcases & Builds</p>
+                            <span class="link-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact / Discord Section -->
+            <section id="contact" class="contact-section">
+                <div class="container">
+                    <div class="contact-wrapper glass-panel">
+                        <div class="contact-info">
+                            <h2 class="contact-title">Let's Build the <br> <span class="text-mclaren">Next Big Thing</span></h2>
+                            <p class="contact-desc">
+                                Ready to start your project? I prefer direct communication via Discord for quick responses and file sharing.
+                            </p>
+                            
+                            <div class="discord-card">
+                                <div class="discord-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.419-2.1568 2.419zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.419-2.1568 2.419z"/></svg>
+                                </div>
+                                <div class="discord-details">
+                                    <span class="discord-label">Discord Username</span>
+                                    <span class="discord-user">enderman_cool</span>
+                                </div>
+                                <button class="btn-copy" onclick="copyDiscord()">Copy</button>
+                            </div>
+                        </div>
+                        <div class="contact-visual">
+                             <div class="visual-card glass-panel" style="border:none; background: transparent; box-shadow: none;">
+                                <div class="code-block">
+                                    <span class="code-keyword">function</span> <span class="code-func">ContactMe</span>()<br>
+                                    &nbsp;&nbsp;<span class="code-keyword">local</span> discord = <span class="code-string">"enderman_cool"</span><br>
+                                    &nbsp;&nbsp;<span class="code-func">Print</span>(<span class="code-string">"Ready to work!"</span>)<br>
+                                    <span class="code-keyword">end</span>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="container">
+                    <p>&copy; 2024 Radiant Groups. Engineered to Shine.</p>
+                </div>
+            </footer>
+        </section>
+
+        <!-- VIEW: PROJECT DETAILS -->
+        <section id="project-view" class="view">
+            <div class="project-hero">
+                <button class="btn-back" onclick="navigateTo('home')">
+                    <span>←</span> Back to Work
+                </button>
+                <div class="project-hero-content">
+                    <h1 id="p-title" class="reveal-text">Project Title</h1>
+                    <p id="p-category" class="project-category">Category</p>
+                </div>
+            </div>
+            
+            <div class="container project-body">
+                <div class="project-grid-layout">
+                    <div class="project-info">
+                        <h3 class="info-label">Overview</h3>
+                        <p id="p-desc" class="info-text">Description goes here.</p>
+                        
+                        <h3 class="info-label">Key Features</h3>
+                        <ul id="p-features" class="feature-list"></ul>
+                    </div>
+                    <div class="project-gallery">
+                        <img id="p-image" src="" alt="Project Showcase" class="gallery-main">
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="footer">
+                <div class="container">
+                    <p>&copy; 2024 Radiant Groups. Engineered to Shine.</p>
+                </div>
+            </footer>
+        </section>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
