@@ -307,6 +307,24 @@
             </section>
 
             <!-- Contact / Discord Section -->
+        <script>
+                function copyDiscord() {
+                    const username = "enderman_cool";
+
+                navigator.clipboard.writeText(username)
+                    .then(() => {
+                    const btn = document.querySelector('.btn-copy');
+                    btn.textContent = "Copied!";
+            
+                    setTimeout(() => {
+                    btn.textContent = "Copy";
+                    }, 1500);
+                })
+                .catch(err => {
+                    console.error("Failed to copy: ", err);
+                });
+            }
+        </script>
             <section id="contact" class="contact-section">
                 <div class="container">
                     <div class="contact-wrapper glass-panel">
